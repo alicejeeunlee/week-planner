@@ -7,6 +7,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <div class="row text-center">
+      <div class="column-full">
+        <h1>
+          Weekly Planner
+        </h1>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="column-full">
+        <button>Add Entry</button>
+      </div>
+    </div>
+
+    <div class="modal-layout">
+      <div class="modal">
+        <h1>Add Entry</h1>
+        <select name="day-of-week" id="day">
+          <option value="" selected="selected" disabled>Day of Week</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+          <option value="Sunday">Sunday</option>
+        </select>
+        <input type="time" id="time">
+      </div>
+    </div>
+
+
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
