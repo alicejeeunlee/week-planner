@@ -18,3 +18,40 @@
 #time::before {
   content: "Time";
 }
+
+.modal-layout {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.371);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 350px;
+  height: 260px;
+  background-color: white;
+  padding: 0 1rem;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none;
+}
+
+textarea {
+  margin: 1rem 0;
+  resize: none;
+  width: 350px;
+}
+
+.text-right {
+  text-align: right;
+}

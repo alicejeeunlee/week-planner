@@ -17,13 +17,14 @@
     </div>
     <div class="row text-center">
       <div class="column-full">
-        <button>Add Entry</button>
+        <button class="entry-button">Add Entry</button>
+        <h2>Scheduled Events for Monday</h2>
       </div>
     </div>
 
-    <div class="modal-layout">
+    <div class="modal-layout hidden">
       <div class="modal">
-        <h1>Add Entry</h1>
+        <h1 class="text-center">Add Entry</h1>
         <select name="day-of-week" id="day">
           <option value="" selected="selected" disabled>Day of Week</option>
           <option value="Monday">Monday</option>
@@ -35,6 +36,10 @@
           <option value="Sunday">Sunday</option>
         </select>
         <input type="time" id="time">
+        <textarea placeholder="Description" rows="5" cols="20"></textarea>
+        <div class="text-right display-flex">
+          <button>SUBMIT</button>
+        </div>
       </div>
     </div>
 
