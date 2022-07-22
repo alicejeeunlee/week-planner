@@ -11,8 +11,17 @@
   flex-basis: 100%;
 }
 
+.col-7 {
+  flex-basis: calc(100%/7);
+}
+
 .text-center {
   text-align: center;
+}
+
+.justify-center {
+  justify-content: center;
+  margin: auto;
 }
 
 #time::before {
@@ -54,4 +63,20 @@ textarea {
 
 .text-right {
   text-align: right;
+}
+
+.day-button {
+  margin: 1rem 0;
+}
+
+.width-80 {
+  width: 80%;
+}
+
+th {
+  background-color: rgb(135, 213, 229);
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(190, 187, 187);
 }
