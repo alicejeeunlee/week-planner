@@ -17,25 +17,25 @@
     </div>
     <div class="row text-center day-button">
       <div class="col-7">
-        <button>Sunday</button>
+        <button class="sundayButton">Sunday</button>
       </div>
       <div class="col-7">
-        <button>Monday</button>
+        <button class="mondayButton">Monday</button>
       </div>
       <div class="col-7">
-        <button>Tuesday</button>
+        <button class="tuesdayButton">Tuesday</button>
       </div>
       <div class="col-7">
-        <button>Wednesday</button>
+        <button class="wednesdayButton">Wednesday</button>
       </div>
       <div class="col-7">
-        <button>Thursday</button>
+        <button class="thursdayButton">Thursday</button>
       </div>
       <div class="col-7">
-        <button>Friday</button>
+        <button class="fridayButton">Friday</button>
       </div>
       <div class="col-7">
-        <button>Saturday</button>
+        <button class="saturdayButton">Saturday</button>
       </div>
     </div>
     <div class="row text-center">
@@ -54,7 +54,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>10:00</td>
+            <!-- <td>10:00</td>
             <td>Practice Algorithms</td>
           </tr>
           <tr>
@@ -63,31 +63,31 @@
           </tr>
           <tr>
             <td>1:00</td>
-            <td>Play</td>
+            <td>Play</td> -->
           </tr>
         </tbody>
       </table>
     </div>
 
     <div class="modal-layout hidden">
-      <div class="modal">
+      <form class="modal">
         <h1 class="text-center">Add Entry</h1>
-        <select name="day-of-week" id="day">
-          <option value="" selected="selected" disabled>Day of Week</option>
-          <option value="Monday">Monday</option>
-          <option value="Tuesday">Tuesday</option>
-          <option value="Wednesday">Wednesday</option>
-          <option value="Thursday">Thursday</option>
-          <option value="Friday">Friday</option>
-          <option value="Saturday">Saturday</option>
-          <option value="Sunday">Sunday</option>
+        <select name="day" id="day">
+          <option id="placeholder" value="" selected="selected" disabled>Day of Week</option>
+          <option id="Monday" value="Monday">Monday</option>
+          <option id="Tuesday" value="Tuesday">Tuesday</option>
+          <option id="Wednesday" value="Wednesday">Wednesday</option>
+          <option id="Thursday" value="Thursday">Thursday</option>
+          <option id="Friday" value="Friday">Friday</option>
+          <option id="Saturday" value="Saturday">Saturday</option>
+          <option id="Sunday" value="Sunday">Sunday</option>
         </select>
-        <input type="time" id="time">
-        <textarea placeholder="Description" rows="5" cols="20"></textarea>
+        <input type="time" name="time" id="time">
+        <textarea name="description" placeholder="Description" rows="5" cols="20"></textarea>
         <div class="text-right display-flex">
           <button>SUBMIT</button>
         </div>
-      </div>
+      </form>
     </div>
 
 
